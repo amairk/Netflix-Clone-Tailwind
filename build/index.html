@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <title>Netflix India</title>
+</head>
+
+<body class="bg-black ">
+    <!-- nav and image and body text-->
+    <div style="background:linear-gradient(rgb(0 0 0/60%) 0 0),linear-gradient(rgb(0 0 0/60%) 0 0),url(./assets/movie-pic.jpg);"
+        class="h-screen">
+
+        <div class="relative flex flex-row items-center md:top-0 justify-around top-4">
+            <img src="./assets/logo.png" class="w-1/3 md:w-1/6 object-contain" />
+            <button class="bg-red-600 text-white px-4 py-2 rounded">Sign In</button>
+        </div>
+        <div class="h-[100%] flex items-center justify-center">
+            <div class="text-center text-white md:mx-auto mx-4 ">
+                <h1 class="font-bold md:text-4xl text-xl">Unlimited movie, TV shows and more</h1>
+                <p class="md:mt-6 md:text-lg mt-2 text-base">Watch anywhere. Cancel anytime.</p>
+                <p class="md:mt-4 md:text-lg mt-2 text-base">Ready to Watch? Enter your email to create or restart your
+                    membership.</p>
+                <div class="mt-5 md:block flex flex-col items-center gap-3">
+                    <input class="md:inline-block block md:w-2/6 w-[100%] p-3 bg-transparent border-2 border-gray-400"
+                        placeholder="Enter your email.." />
+                    <button class="md:inline-block block   bg-red-600 w-[100%] p-3 md:w-40">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav and image and body end -->
+
+
+    <!-- download section start -->
+    <div class="border-t-8 border-t-slate-700">
+        <div class="md:flex md:flex-row block items-center text-center md:text-justify md:justify-around md:m-20 m-10">
+            <div class="text-white">
+                <h1 class="md:text-4xl text-xl font-extrabold md:text-left">Enjoy on your TV</h1>
+                <p class="md:mt-5 md:text-lg mt-2 text-base md:text-left">Watch on Smart TVs, Playstation, XBOX,
+                    Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="md:mt-0 mt-5">
+                <img src="./assets/tv-new.png" class="h-[80%]">
+            </div>
+        </div>
+    </div>
+    <!-- download section end -->
+
+
+    <!-- with video frame start -->
+    <div class="border-t-8 border-t-slate-700">
+        <div class="md:flex md:flex-row block items-center text-center md:text-justify md:justify-around md:m-20 m-10">
+            <div class="md:mt-0 mt-5">
+                <img src="./assets/mobile.png" class="h-[80%]">
+                <div class="md:h-24 sm:h-20 h-16 md:w-[83%] sm:w-[70%] w-[95%] left-2  relative md:-top-20 sm:-top-20 -top-10 md:left-10 lg:left-20 sm:left-20 text-white  rounded-lg bg-black"
+                    style="border: 2px solid white;">
+                    <img src="./assets/joker-poster-2.jpg" class="h-[100%] float-left">
+                    <span class="md:text-lg text-center">Joker</span>
+                    <img src="./assets/download-icon.gif" class="float-right relative h-[100%]" />
+                    <p class="mt-3 md:text-base text-blue-400 sm:text-sm text-xs block">Downloading</p>
+                </div>
+            </div>
+
+            <div class="text-white">
+                <h1 class="md:text-4xl text-xl font-extrabold md:text-left">Download your shows to watch offline.</h1>
+                <p class="md:mt-5 md:text-lg mt-2 text-base md:text-left">Save your favourites easily and always have
+                    something to watch.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- with video frame end -->
+
+
+
+    <div class="relative border-t-8 border-t-slate-700">
+        <div class="md:flex md:flex-row block items-center text-center md:text-justify md:justify-around md:m-20 m-10">
+            <div class="text-white">
+                <h1 class="md:text-4xl text-xl font-extrabold md:text-left">Watch everywhere</h1>
+                <p class="md:mt-5 md:text-lg mt-2 text-base md:text-left">Stream unlimited movies and TV shows on your
+                    phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="m-3 max-w-lg relative">
+                <img src="./assets/devices-new.png" class="w-[100%]">
+                <video autoplay playsinline muted loop class="top-[8%] w-[63%] absolute left-[18%] -z-10">
+                    <source src="./assets/joker-intro.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Faq section -->
+    <div class="relative border-t-8 border-t-slate-700">
+        <div class="text-center text-white md:m-20 mt-10">
+            <div><h1 class="md:text-3xl text-xl font-extrabold">Frequently Asked Questions</h1></div>
+            <div id="ques" class="hover:cursor-pointer focus:outline-none mt-10 mb-10 sm:w-[60%] md:w-[60%] w-[80%] mx-auto text-center">
+                <div class="bg-red-500 flex flex-row items-center justify-between p-3">
+                    <div class="text-left focus:outline-none">What is Netflix?</div>
+                    <button class="text-3xl transition-all">+</button>
+                </div>
+                <div id="ans-0" class="w-[100%] text-left bg-gray-400 opacity-0 transition-opacity duration-1000"></div>
+                <div class="bg-red-500 flex flex-row items-center justify-between p-3 mt-2">
+                    <div class="text-left focus:outline-none">How much does Netflix cost?</div>
+                    <button class="text-3xl">+</button>
+                </div>
+                <div id="ans-1" class="w-[100%] opacity-0 transition-opacity duration-1000 text-left bg-gray-400"></div>
+                <div class="bg-red-500 flex flex-row items-center justify-between p-3 mt-2">
+                    <div class="text-left focus:outline-none">Where can I watch?</div>
+                    <button class="text-3xl">+</button>
+                </div>
+                <div id="ans-2" class="w-[100%] opacity-0 transition-opacity duration-1000 text-left bg-gray-400"></div>
+                <div class="bg-red-500 flex flex-row items-center justify-between p-3 mt-2">
+                    <div class="text-left focus:outline-none">How do I cancel?</div>
+                    <button class="text-3xl">+</button>
+                </div>
+                <div id="ans-3" class="w-[100%] opacity-0 transition-opacity duration-1000 text-left bg-gray-400"></div>
+                <div class="bg-red-500 flex flex-row items-center justify-between p-3 mt-2">
+                    <div class="text-left focus:outline-none">What can I watch on Netflix?</div>
+                    <button class="text-3xl">+</button>
+                </div>
+                <div id="ans-4" class="w-[100%] opacity-0 transition-opacity duration-1000 text-left bg-gray-400"></div>
+            </div>
+        </div>
+    </div>
+    <!-- faq section end -->
+
+
+    <div class="border-t-8 border-t-slate-700">
+        <div class="w-[80%] mb-20 text-gray-400 mt-14 mx-auto xs:text-center sm:text-left">
+            <p class="text-gray-200">Questions? Call <a class="underline decoration-solid">000-800-919-1694</a></p>
+            <div class="mt-4 grid md:grid-cols-3 gap-2 sm:grid-cols-2  ">
+                <a class="underline decoration-solid">FAQ</a>
+                <a class="underline decoration-solid">Help centre</a>
+                <a class="underline decoration-solid">Account</a>
+                <a class="underline decoration-solid">Media center</a>
+                <a class="underline decoration-solid">Invetor Relations</a>
+                <a class="underline decoration-solid">Jobs</a>
+                <a class="underline decoration-solid">Ways to watch</a>
+                <a class="underline decoration-solid">Terms of use</a>
+                <a class="underline decoration-solid">Privacy</a>
+                <a class="underline decoration-solid">Cookie Preferences</a>
+                <a class="underline decoration-solid">Corporate Information</a>
+                <a class="underline decoration-solid">Contact us</a>
+                <a class="underline decoration-solid">Speed Test</a>
+                <a class="underline decoration-solid">Legal notices</a>
+                <a class="underline decoration-solid">Only on Netflix</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
